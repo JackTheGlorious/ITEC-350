@@ -1,41 +1,77 @@
+<!-- Site created by Jonathan Golz on 8/26/21
+Southern Illinois University Carbondale
+Index/Home Page for Glorious Holes
+Last updated 9/26/21
+Tested 9/26/21 -->
 <!DOCTYPE html>
-
-<!-- Comment Header for my website -->
 <html lang="en-US">
+
     <head>
+        <!--Site Title-->
         <meta charset="utf-8">
         <title>Glorious Holes</title> 
         <meta name="description" content="A donut shop that sells everything donut"> <meta name="keywords" content="Glorious, Donut, Glazed, Iced, Holes, Filled, Catering, Desert, Breakfast">
+        <link rel="stylesheet" href="main.css">    
+        
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.css"> 
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> <script src="js/jquery.slicknav.min.js"></script> 
+        <script type="text/javascript"> 
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
+            }); 
+        </script>
+        
+
     </head>
 
-    <body>
+    
         <header>
-            <img src="images/donut_PNG50.png" alt="MPC Logo" width="500"> 
+            <!--Donut header insertion and alt text-->
+            <figure class="logo">
+            <img class="logo"  src="images/donut_PNG50.png" alt="Donut" />
+            </figure> 
         </header> 
-            <h1>Glorious Holes</h1> 
+
+        <!--Navigation Menu-->
+        <nav> 
+            <ul>
+                <li class="navlist"><a href="index.htm" >Home</a></li> <!--list items-->
+                <li class="navlist"><a href="catering.htm">Catering</a></li> 
+                <li class="navlist"><a href="services.htm" >Services</a></li>
+                <li class="navlist"><a href="products.htm" >Products</a></li> 
+                <li class="navlist"><a href="contact.htm" >Contact</a></li>
+            </ul> 
+        </nav>
+
+        <body>
+            <!--Visual Title and quick description-->
+            <h1>Glorious Holes</h1>
             <h2>Your home for everything Donut.</h2>
             <p>Alongside our Illinois location, we devliver nationeide!</p>
-         
-    
-            <p>We make every kind of Donut!</p>
-            <!-- block quote -->
-            <blockquote><i>(Options available for penut and gluten allergies.)</i>
+            <br>
+
+            <!--block quote infromation-->
+            <blockquote>
+            <p>We make every kind of Donut!</p>                
+                <i><span style="color:red;font-weight:bold">(Options available for penut and gluten allergies.)</span></i>
+                <!--Product list-->                
+                <ol> 
+                    <li>Glazed</li> <li>Iced</li> <li>Cream filled</li><li>Jam filled</li><li>Donut holes</li>
+                </ol>                 
             </blockquote>
-            <!--list of bikes -->
-            <ol>
-                <li>Glazed</li> <li>Iced</li> <li>Cream filled</li><li>Jam filled</li><li>Donut holes</li>
-            </ol> 
-              <!--inline element -->
+            <!--inline element-->
             <p>Don't see a flavor that fancies you? <em>We can make specielty orders.</em></p> 
-            <p>Save big with our <strong>catering bundles</strong>.</p> 
-             <!--not sure what "school" you were referring to, but here is a link :) -->
-            <a href="https://www.siu.edu">WWW.GloriousHoles.com</a> 
-            
-            <p>How to contact us &amp; Staff:</p> <address>1-618-549-5326<br>
-            <a href="emailto:owner@mpc.com">owner@gloriousholes.com</a> </address> 
-           
+            <!--School link-->
+            <br>
+            <p>Share us with your friends!</p><newline><a href="https://www.siu.edu">www.GloriousHoles.com</a>
+            </newline>    
+            <br><br><br><p>Save big with our <strong>catering bundles</strong>.</p> 
+            <p>How to contact us:</p> <address class="padding">1-618-549-5326<br></address> 
+            <a href="emailto:Jack@glh.com">owner@gloriousholes.com</a> 
+
             <pre>
-<!-- my address -->
+<!--store address (preformatted text )-->
 Store Address:
 
 Glorious Holes
