@@ -1,0 +1,162 @@
+/* CSS STylesheet for the Glorious Holes Site
+Created by Jonathan Golz
+Southern Illinois University Carbondale
+Last updated 9/26/21
+Tested 9/26/21 */
+
+.logo { /* logo image specifications*/
+    float: none;
+    width: 72%;
+    min-width: 300px;
+    max-width: 350px;
+    margin:  0 auto;
+    min-height: 135px;
+    max-height: 284px;
+}
+.cateringlogo { /* logo image specifications for the catering page with inverted effect*/
+    filter: invert(100%);
+    float: none;
+    width: 72%;
+    min-width: 300px;
+    max-width: 350px;
+    margin:  0 auto;
+    min-height: 135px;
+    max-height: 284px;
+}
+
+body {
+    
+    width: 90%;          /* makes content not hug edge*/
+    background-color: #979797; /* this color is gray */
+    margin: 10px auto;
+
+    } 
+
+.catering {
+    width: 90%;          /* makes content not hug edge*/
+    background-color: #e6ffad; /* yellowish color for more distinction */
+    margin: 10px auto;
+
+    } 
+/*sets up the format for content in the varies different sections of content*/
+header { 
+    width: 97.917%;          
+    padding: 10px 1.0417%;
+    clear: both; 
+    font-size: 2em;
+    }
+
+/*Page Titles*/
+h1 {
+    text-align: center;
+    font-size: 3em; /* 28 * 16 */ 
+    padding: 10px;
+    }
+
+/*Title desciption*/
+h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}    
+
+/*For Adding extra padding*/
+.padding {
+    font-size: 1.7em;
+    padding-left: 10px;
+}    
+
+/*Change the list format for catering */
+.caterlist {
+    font-size: 1.55em; 
+}
+
+/*Text format for variety in the body*/
+p { 
+    font-size: 1.6em; 
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Arial';
+    
+}
+
+/*Formatting for blockquotes*/
+blockquote {
+    width: 47.917%;         
+    padding: 10px 1.0417%;
+    
+    }
+
+/*Formatting for Footers*/
+footer { 
+    font-size: .75em; 
+    width: 97.917%;          
+    padding: 10px 1.0417%;
+    clear: both; 
+    
+    }
+
+/*Spaces bullet and text */ 
+li {
+    padding-left: 10px; 
+    } 
+
+/*Contact text*/
+a { 
+    font-size: 1.7em;
+    padding-left: 10px;
+}
+
+/*set up columns*/
+.column {
+    float: left;
+    width: 50%;
+    display: inline-flex; /* keeps everything contained to prevent the background from getting out of hand */
+    background-color:rgb(49, 49, 49);
+    color:#554e4e;
+    padding-bottom: 5px;
+    color: white;
+}
+
+/* Clear floats */
+.row:after { 
+    content: "";
+    display: table;
+    clear: both;
+}
+
+* { margin: 0; padding: 0;}
+#nav_list ul {
+    list-style-type: none;
+    margin-left: 1.25em;
+    margin-bottom: 1.5em;
+}
+#nav_list ul li {
+    width:200px;
+    margin-bottom: .5em;
+    border: 2px rgb(40, 40, 44);
+}
+#nav_list ul li a {
+    display: block;
+    padding: .5em 0 .5em 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(123, 57, 136);
+}
+#nav_list ul li a.current {
+    background-color: silver;
+}
+
+.navlist {
+    width:200px;
+    margin-bottom: .5em;
+    border: 2px solid rgb(40, 40, 44);
+    list-style-type: none;
+    margin-left: 1.05em;
+    margin-bottom: 1em;
+    display: block;
+    padding: .5em 0 .5em 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(123, 57, 136);
+    background-color: silver;
+}
